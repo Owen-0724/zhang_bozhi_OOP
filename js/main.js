@@ -1,29 +1,24 @@
-import Guitar from "./guitar.js";
+import { earbud } from "./earbud.js";
+import { Taggedearbud } from "./taggedearbud.js";
 
-const fenderStrat = new Guitar(
-    "Fender",
-    "Stratocaster",
-    "Ocean Blue",
-    6,
-    "Humbucker"
+
+const Sony = new earbud(
+    "Sony",
+    "images/Sony1.jpg"
+);
+const Bored = new earbud(
+    "Bored",
+    "images/white1.jpg"
 );
 
-const gretschWhiteFalcon = new Guitar(
-    "Gretsch",
-    "White Falcon",
-    "White",
-    12,
-    "Filter'Tron"
-);
 
-console.log(fenderStrat);
-fenderStrat.strum();
+document.addEventListener("DOMContentLoaded", () => {
+    const galleryContainer = document.getElementById("gallery");
 
-console.log(gretschWhiteFalcon);
-gretschWhiteFalcon.strum();
+   
 
-const fenderBass = new BassGuitar();
-
-console.log(fenderBass);
-fenderBass.strum();
-fenderBass.SlapDaBass();
+    Sony.info();
+    Sony.showImg(galleryContainer);
+    Bored.info();
+    Bored.showImg(galleryContainer);
+});
