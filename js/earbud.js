@@ -4,10 +4,12 @@ export class earbud {
         this.imageUrl = imageUrl;
     }
 
-    info() {
-        let p = document.createElement("p");
+    info(container) {
+        const p = document.createElement("p");
         p.textContent = `A ${this.company} earbud`;
         document.body.appendChild(p);
+
+        
     }
 
     showImg(container){
@@ -16,11 +18,17 @@ export class earbud {
         imgElement.alt = this.company;
         imgElement.classList.add("img");
 
+        const p = document.createElement("p");
+        p.textContent = `A ${this.company} earbud`;
+        
         const imgContainer = document.createElement("div");
         imgContainer.classList.add("img-container");
         imgContainer.appendChild(imgElement);
+        imgContainer.appendChild(p);
 
         container.appendChild(imgContainer);
+
+        return imgElement;
     }
 
     

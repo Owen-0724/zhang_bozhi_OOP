@@ -26,5 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
     Sony.showImg(galleryContainer);
     Bored.info();
     Bored.showImg(galleryContainer);
-    Sony2.color();
+
+
+    const sony2Image = Sony2.showImg(galleryContainer);
+    const handleClick = () => {
+        Sony2.color();  
+        sony2Image.removeEventListener("click", handleClick);  
+    };
+    sony2Image.addEventListener("click", handleClick);
 });

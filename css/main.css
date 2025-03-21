@@ -1,1 +1,25 @@
-.content{display:none}#web-dev{display:block}/*# sourceMappingURL=main.css.map */
+.content {
+  display: none;
+}
+
+#web-dev {
+  display: block;
+}
+
+.img-container img {
+  margin: 30px;
+}
+
+.img-container {
+  display: inline;
+}
+
+.img-container p {
+  text-align: center;
+  font-size: 60px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+}/*# sourceMappingURL=main.css.map */
