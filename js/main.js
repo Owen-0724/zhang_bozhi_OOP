@@ -11,6 +11,11 @@ const Bored = new earbud(
     "images/white1.jpg"
 );
 
+const Sony2 = new Taggedearbud(
+    "Sony",
+    "images/Sony2.jpg",
+    ["dark", "wireless",]
+);
 
 document.addEventListener("DOMContentLoaded", () => {
     const galleryContainer = document.getElementById("gallery");
@@ -21,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
     Sony.showImg(galleryContainer);
     Bored.info();
     Bored.showImg(galleryContainer);
+    Sony2.color();
 });

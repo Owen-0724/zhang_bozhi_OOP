@@ -6,7 +6,9 @@ export class Taggedearbud extends earbud {
         this.tags = tags;
     }
 
-    matchesTag(tag) {
-        return this.tags.includes(tag);
+    color() {
+        let p = document.createElement("p");
+        p.textContent = `A ${this.tags.join(", ")} earbud`;
+        document.body.appendChild(p);
     }
 }
