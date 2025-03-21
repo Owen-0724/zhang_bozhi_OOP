@@ -17,14 +17,20 @@ const Sony2 = new Taggedearbud(
     ["dark", "wireless",]
 );
 
+const Bored2 = new Taggedearbud(
+    "Bored",
+    "images/white2.jpg",
+    ["white", "wireless",]
+);
+
 document.addEventListener("DOMContentLoaded", () => {
     const galleryContainer = document.getElementById("gallery");
 
    
 
-    Sony.info();
+
     Sony.showImg(galleryContainer);
-    Bored.info();
+
     Bored.showImg(galleryContainer);
 
 
@@ -34,4 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
         sony2Image.removeEventListener("click", handleClick);  
     };
     sony2Image.addEventListener("click", handleClick);
+
+    const Bored2Image = Bored2.showImg(galleryContainer);
+    const handleClick2 = () => {
+        Bored2.color();  
+        Bored2Image.removeEventListener("click", handleClick2);  
+    };
+    Bored2Image.addEventListener("click", handleClick2);
 });

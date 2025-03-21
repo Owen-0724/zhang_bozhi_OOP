@@ -8,10 +8,20 @@
 
  .img-container img{
   margin: 30px;
+  width: 400px;
+  align-self: center;
+
+ }
+
+ #gallery{
+  display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .img-container{
   display: inline;
+  align-self: center;
  }
 
  .img-container p{
@@ -24,5 +34,8 @@
   font-size: 100px;
  }
 
- #gallery{
+ .img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  
  }
